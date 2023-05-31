@@ -19,5 +19,18 @@ public class Search {
 
         }
     }
+    public List<Vertex> getPath(Vertex destination){
+        List<Vertex> path = new ArrayList<>();
+        if(!visited[destination.getId()]){
+            return path;
+        }
+        int curr = destination.getId();
+        while (curr != source.getId()){
+            path.add(0, graph.getVertices().get(curr));
+            curr = edgeTo[curr];
+        }
+        path.add(0,source);
+        return path;
+    }
 
 }
