@@ -19,3 +19,15 @@ It extends the Search class and uses a priority queue to find the shortest path 
 The Main class is the entry point of the program. By adding vertices and their surrounding edges to an already existing weighted graph, it shows how to use the BFS and Dijkstra's method to discover the shortest path between a source vertex and a destination vertex. 
 
 And overall, this code offers a foundation for interacting with graphs, doing graph searches, and locating the shortest paths in weighted graphs.
+
+And this is how my graph look
+
+        A --3-- B
+        |       |
+        4       2
+        |       |
+        C       D
+   (7) /  \ (2) / (4)
+     F --3-- E
+
+  
