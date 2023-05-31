@@ -10,4 +10,11 @@ public class Vertex {
     public int getId(){
         return id;
     }
+    public void addAdjacentEdge(Vertex vertex, int weight){
+        Edge edge = new Edge(vertex, weight);
+        adjacentEdges.add(edge);
+    }
+    public List<Edge> getAdjacentEdges(){
+        return adjacentEdges;
+    }
 }
