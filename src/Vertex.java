@@ -17,4 +17,7 @@ public class Vertex {
     public List<Edge> getAdjacentEdges(){
         return adjacentEdges;
     }
+    public String toString(){
+        return "Vertex " + id;
+    }
 }
