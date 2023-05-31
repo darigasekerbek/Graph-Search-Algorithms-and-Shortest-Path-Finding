@@ -14,6 +14,11 @@ public class BFS extends Search {
             Vertex curr_V = q.poll();
             for (Edge edge : curr_V.getAdjacentEdges()){
                 Vertex adj_V = edge.getDestination();
+                if(!visited[adj_V.getId()]){
+                    visited[adj_V.getId()] = true;
+                    edgeTo[adj_V.getId()] = curr_V.getId();
+                    q.offer(adj_V);
+                }
             }
         }
     }
