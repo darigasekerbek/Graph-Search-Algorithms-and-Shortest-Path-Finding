@@ -5,4 +5,10 @@ public class WeightedGraph {
     public WeightedGraph(){
         this.vertices = new ArrayList<>();
     }
+    public void addVertex(Vertex vertex){
+        vertices.add(vertex);
+    }
+    public List<Vertex> getVertices(){
+        return vertices;
+    }
 }
