@@ -26,10 +26,10 @@ public class Main {
         w_graph.addVertex(F);
 
         BFS bfs = new BFS(w_graph, A); // BreadthFirstSearch
-        System.out.println("Breadth First Search ");
+        System.out.println("Breadth First Search  ");
         System.out.println("Path from A to F " + bfs.getPath(F));
         DijkstraSearch dijk = new DijkstraSearch(w_graph, A);
-        System.out.println("Dijkstra's Algorithm ");
+        System.out.println("Dijkstra's Algorithm  ");
         System.out.println("The shortest path from A to F " + dijk.getShortPath(F));
         }
     }
