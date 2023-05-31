@@ -8,7 +8,7 @@ public class WeightedGraph {
     public void addVertex(Vertex vertex){ //method which add a vertex to the graph
         vertices.add(vertex);
     }
-    public List<Vertex> getVertices(){
+    public List<Vertex> getVertices(){ // method which retrieve list of vertices in graph
         return vertices;
     }
 }
