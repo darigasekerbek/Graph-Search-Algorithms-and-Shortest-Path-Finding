@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class DijkstraSearch extends Search {
@@ -35,7 +37,22 @@ public class DijkstraSearch extends Search {
             }
         }
     }
-
+    public int getShortDist(Vertex destination) {
+        return dist[destination.getId()];
+    }
+    public List<Vertex> getShortPath(Vertex destination){
+        List<Vertex> path = new ArrayList<>();
+        if (dist[destination.getId()] == Integer.MAX_VALUE) {
+            return path;
+        }
+        int curr = destination.getId();
+        while (curr!= source.getId()){
+            path.add(0, graph.getVertices().get(curr));
+            curr = edgeTo[curr];
+        }
+        path.add(0,source);
+        return path;
+    }
 }
 
 
