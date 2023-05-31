@@ -18,7 +18,7 @@ public class Vertex {
     public List<Edge> getAdjacentEdges(){ // method that retrieve list of adj edges of vertex
         return adjacentEdges;
     }
-    public String toString(){
-        return "Vertex " + id;
+    public String toString(){ //that method provide a custom str representation of vertex
+        return "Vertex " + id; // it return a str in format "Vertex <id>"
     }
 }
