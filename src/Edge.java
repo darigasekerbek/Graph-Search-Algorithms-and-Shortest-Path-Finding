@@ -5,10 +5,10 @@ public class Edge {
         this.destination = destination;
         this.weight = weight;
     }
-    public Vertex getDestination(){
+    public Vertex getDestination(){ //getter method which retrieve destination vertex of edge
         return destination;
     }
-    public int getWeight(){
+    public int getWeight(){ //getter method which retrieve weight of edge
         return weight;
     }
 }
